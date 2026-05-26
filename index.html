@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCカウンセリング スキルアップ講座 | 説明会動画</title>
+  <meta name="description" content="学んだSC®メソッドを実践で活かせるカウンセラーになる。SCカウンセリング スキルアップ講座の説明会動画をご覧ください。">
+
+  <style>
+    /* ─── リセット & ベース ─── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --berry:      #4A1942;
+      --berry-mid:  #6B2D5E;
+      --rose:       #B5748A;
+      --rose-light: #D4A5B5;
+      --gold:       #C8996A;
+      --gold-light: #E8C99A;
+      --cream:      #F5EEE8;
+      --cream-deep: #E8D8CC;
+      --white:      #FFFFFF;
+      --text-dark:  #2D1525;
+      --text-mid:   #6B4560;
+      --text-light: #F5EEF5;
+
+      --font-serif: Georgia, 'Times New Roman', 'Yu Mincho', '游明朝', serif;
+      --font-sans:  'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP',
+                    'YuGothic', 'Yu Gothic', sans-serif;
+
+      --radius: 8px;
+      --max-w:  760px;
+      --section-pad: 72px 20px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--text-dark);
+      background: var(--cream);
+      line-height: 1.8;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; display: block; }
+    a   { color: inherit; text-decoration: none; }
+
+    /* ─── ユーティリティ ─── */
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-family: var(--font-serif);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 auto 32px;
+    }
+
+    /* ─── ① ファーストビュー ─── */
+    .hero {
+      background: var(--berry);
+      padding: 64px 20px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 背景の装飾サークル */
+    .hero::before,
+    .hero::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.06;
+      background: var(--gold);
+      pointer-events: none;
+    }
+    .hero::before {
+      width: 500px; height: 500px;
+      top: -200px; right: -150px;
+    }
+    .hero::after {
+      width: 300px; height: 300px;
+      bottom: -100px; left: -80px;
+    }
+
+    .hero__inner {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .hero__badge {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 28px;
+    }
+
+    .hero__title {
+      font-family: var(--font-serif);
+      font-size: clamp(24px, 5.5vw, 38px);
+      font-weight: normal;
+      color: var(--text-light);
+      line-height: 1.5;
+      margin-bottom: 20px;
+      letter-spacing: 0.04em;
+    }
+
+    .hero__title em {
+      font-style: normal;
+      color: var(--gold-light);
+      display: block;
+    }
+
+    .hero__sub {
+      font-size: clamp(14px, 3.2vw, 16px);
+      color: var(--rose-light);
+      margin-bottom: 32px;
+      line-height: 1.9;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero__lead {
+      font-size: 13px;
+      color: rgba(245,238,248,0.7);
+      margin-bottom: 28px;
+      letter-spacing: 0.03em;
+    }
+
+    /* 動画エリア（ファーストビュー内） */
+    .hero__video-wrap {
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(200,153,106,0.3);
+      border-radius: 10px;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      max-width: 680px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .hero__video-wrap iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* ─── ② 共感セクション ─── */
+    .empathy {
+      background: var(--white);
+      padding: var(--section-pad);
+      text-align: center;
+    }
+
+    .empathy__heading {
+      font-family: var(--font-serif);
+      font-size: clamp(20px, 4.5vw, 28px);
+      font-weight: normal;
+      color: var(--berry);
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+
+    .empathy__list {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .empathy__item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--cream);
+      border-left: 3px solid var(--rose);
+      padding: 18px 20px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .empathy__item::before {
+      content: '';
+      flex-shrink: 0;
+      width: 6px;
+      height: 6px;
+      background: var(--rose);
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+
+    .empathy__item-text {
+      font-size: 15px;
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+
+    .empathy__footer {
+      margin-top: 40px;
+      font-size: 15px;
+      color: var(--text-mid);
+      line-height: 1.9;
+    }
+
+    /* ─── ③ 講座説明 ─── */
+    .about {
+      background: var(--cream-deep);
+      padding: var(--section-pad);
+      text-align: center;
+    }
+
+    .about__heading {
+      font-family: var(--font-serif);
+      font-size: clamp(20px, 4.5vw, 28px);
+      font-weight: normal;
+      color: var(--berry);
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+
+    .about__desc {
+      font-size: 15px;
+      color: var(--text-mid);
+      line-height: 1.9;
+      max-width: 560px;
+      margin: 24px auto 0;
+    }
+
+    .about__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 500px) {
+      .about__cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .about__card {
+      border-radius: var(--radius);
+      padding: 28px 20px 24px;
+      text-align: left;
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 写真の上に重ねる暗いグラデーション */
+    .about__card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(45, 21, 37, 0.25) 0%,
+        rgba(45, 21, 37, 0.72) 55%,
+        rgba(45, 21, 37, 0.88) 100%
+      );
+      border-radius: var(--radius);
+    }
+
+    .about__card-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .about__card-title {
+      font-family: var(--font-serif);
+      font-size: 16px;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+      font-weight: normal;
+      letter-spacing: 0.03em;
+    }
+
+    .about__card-body {
+      font-size: 13px;
+      color: rgba(245, 238, 245, 0.88);
+      line-height: 1.8;
+    }
+
+    .about__note {
+      margin-top: 36px;
+      font-size: 14px;
+      color: var(--text-mid);
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    /* ─── ④ メイン動画セクション ─── */
+    .video-section {
+      background: var(--berry);
+      padding: var(--section-pad);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(200,153,106,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .video-section__inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .video-section__heading {
+      font-family: var(--font-serif);
+      font-size: clamp(20px, 4.5vw, 28px);
+      font-weight: normal;
+      color: var(--text-light);
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+
+    .video-section__sub {
+      font-size: 14px;
+      color: var(--rose-light);
+      line-height: 1.9;
+      max-width: 520px;
+      margin: 16px auto 36px;
+    }
+
+    .video-section__video-wrap {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid rgba(200,153,106,0.3);
+      border-radius: 10px;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      max-width: 680px;
+      margin: 0 auto 48px;
+    }
+
+    .video-section__video-wrap iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* ─── CTAボタン ─── */
+    .cta-btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-size: clamp(15px, 3.5vw, 17px);
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      padding: 18px 48px;
+      border-radius: 50px;
+      text-align: center;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 20px rgba(200,153,106,0.35);
+      min-width: 280px;
+      cursor: pointer;
+    }
+
+    .cta-btn:hover,
+    .cta-btn:focus {
+      background: #b88558;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(200,153,106,0.45);
+    }
+
+    .cta-btn:active {
+      transform: translateY(0);
+    }
+
+    .cta-note {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--rose-light);
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── ⑤ クロージング ─── */
+    .closing {
+      background: var(--white);
+      padding: var(--section-pad);
+      text-align: center;
+    }
+
+    .closing__ornament {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      max-width: 360px;
+      margin: 0 auto 40px;
+    }
+
+    .closing__ornament-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--rose-light));
+    }
+
+    .closing__ornament-line:last-child {
+      background: linear-gradient(to left, transparent, var(--rose-light));
+    }
+
+    .closing__ornament-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--rose);
+      flex-shrink: 0;
+    }
+
+    .closing__message {
+      font-family: var(--font-serif);
+      font-size: clamp(18px, 4vw, 24px);
+      font-weight: normal;
+      color: var(--berry);
+      line-height: 1.7;
+      margin-bottom: 16px;
+      letter-spacing: 0.04em;
+    }
+
+    .closing__sub {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.9;
+      max-width: 480px;
+      margin: 0 auto 40px;
+    }
+
+    /* ─── フッター ─── */
+    footer {
+      background: var(--text-dark);
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    .footer__logo {
+      font-family: var(--font-serif);
+      font-size: 13px;
+      letter-spacing: 0.15em;
+      color: rgba(245,238,248,0.6);
+      margin-bottom: 8px;
+    }
+
+    .footer__copy {
+      font-size: 11px;
+      color: rgba(245,238,248,0.35);
+      letter-spacing: 0.08em;
+    }
+
+    /* ─── 固定CTAバー（スマホ用） ─── */
+    .sticky-cta {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .sticky-cta {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--berry);
+        padding: 12px 20px 16px;
+        z-index: 100;
+        border-top: 1px solid rgba(200,153,106,0.3);
+        text-align: center;
+        box-shadow: 0 -4px 20px rgba(74,25,66,0.25);
+      }
+
+      .sticky-cta .cta-btn {
+        width: 100%;
+        min-width: unset;
+        font-size: 15px;
+        padding: 15px 20px;
+      }
+
+      /* スクロールで隠す対策として本文に下余白 */
+      body {
+        padding-bottom: 80px;
+      }
+    }
+
+    /* ─── レスポンシブ微調整 ─── */
+    @media (max-width: 480px) {
+      :root {
+        --section-pad: 56px 20px;
+      }
+
+      .hero {
+        padding: 52px 20px 44px;
+      }
+
+      .cta-btn {
+        min-width: unset;
+        width: 100%;
+      }
+    }
+
+    /* ─── 受講生の声 ─── */
+    .voices {
+      background: var(--cream);
+      padding: var(--section-pad);
+      text-align: center;
+    }
+
+    .voices__heading {
+      font-family: var(--font-serif);
+      font-size: clamp(20px, 4.5vw, 28px);
+      font-weight: normal;
+      color: var(--berry);
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+
+    .voices__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    @media (max-width: 520px) {
+      .voices__cards { grid-template-columns: 1fr; }
+    }
+
+    .voice-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px 18px;
+      border-top: 3px solid var(--rose);
+      position: relative;
+    }
+
+    .voice-card__quote {
+      font-size: 24px;
+      color: var(--rose-light);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .voice-card__text {
+      font-size: 13px;
+      color: var(--text-dark);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .voice-card__name {
+      font-size: 12px;
+      color: var(--text-mid);
+      font-style: italic;
+    }
+
+    .voice-card__tag {
+      display: inline-block;
+      background: var(--cream);
+      color: var(--berry);
+      font-size: 11px;
+      padding: 2px 10px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── 結果実績バー ─── */
+    .results {
+      background: var(--berry);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .results__label {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .results__grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px 32px;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .results__item {
+      text-align: center;
+    }
+
+    .results__num {
+      font-family: var(--font-serif);
+      font-size: clamp(28px, 6vw, 40px);
+      color: var(--gold-light);
+      display: block;
+      line-height: 1.1;
+    }
+
+    .results__desc {
+      font-size: 11px;
+      color: var(--rose-light);
+      margin-top: 4px;
+    }
+
+    /* ─── 期・日程バッジ ─── */
+    .cohort-box {
+      border: 1px solid rgba(200,153,106,0.5);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin: 24px auto 0;
+      max-width: 480px;
+      text-align: center;
+      background: rgba(200,153,106,0.08);
+    }
+
+    .cohort-box__badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      padding: 3px 14px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .cohort-box__date {
+      font-family: var(--font-serif);
+      font-size: clamp(15px, 3.5vw, 18px);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .cohort-box__note {
+      font-size: 11px;
+      color: rgba(245,238,248,0.5);
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    /* 申込みセクション内（ライト版） */
+    .cohort-box--light {
+      background: var(--cream-deep);
+      border: 1px solid rgba(200,153,106,0.4);
+      margin: 0 auto 32px;
+    }
+
+    .cohort-box--light .cohort-box__date {
+      color: var(--berry);
+    }
+
+    .cohort-box--light .cohort-box__note {
+      color: var(--text-mid);
+    }
+
+    /* ─── アクセシビリティ ─── */
+    :focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cta-btn { transition: none; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════
+       ① ファーストビュー
+  ════════════════════════════════════ -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+
+      <p class="hero__badge">SC協会 受講生・卒業生の方へ</p>
+
+      <h1 class="hero__title">
+        SCで稼げるカウンセラーになりたい、<br>
+        <em>そのための環境が、ここにあります。</em>
+      </h1>
+
+      <p class="hero__sub">
+        やり方は学んだ。でも、なかなか結果が出ない。<br>
+        セールスが怖い。自信が持てない。一人では動けない——<br>
+        そんなあなたに届けたい講座の、説明会動画です。
+      </p>
+
+      <p class="hero__lead">まずはこちらの動画をご覧ください ♪</p>
+
+      <!-- 説明会動画（ファーストビュー内） -->
+      <div class="hero__video-wrap">
+        <!--
+          ▼ ここにYouTube埋め込みURLを設定してください
+          例: src="https://www.youtube.com/embed/XXXXXXXXXXX"
+        -->
+        <iframe
+          src="https://player.vimeo.com/video/1160726259?h=03a8a750ab"
+          title="SCカウンセリング スキルアップ講座 説明会動画"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- 9期日程バッジ（動画直下） -->
+      <div class="cohort-box">
+        <span class="cohort-box__badge">スキルアップ講座 9期 受付中</span>
+        <p class="cohort-box__date">
+          東京研修よりスタート<br>
+          2026年6月28日（日）〜 29日（月）
+        </p>
+        <p class="cohort-box__note">※ 上の動画は8期説明会の録画です。内容・カリキュラムは9期も同様です。</p>
+      </div>
+
+      <!-- CTA（動画直下） -->
+      <div style="margin-top: 32px;">
+        <a
+          href="https://asp.jcity.co.jp/FORM/?userid=spispi2017&formid=781"
+          class="cta-btn"
+          id="cta-hero">
+          スキルアップ講座に申し込む
+        </a>
+        <p class="cta-note">※ 申込みフォームへ移動します</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       ② こんな想いはありませんか？
+  ════════════════════════════════════ -->
+  <section class="empathy">
+    <div class="container">
+
+      <p class="section-label">Your Story</p>
+      <h2 class="empathy__heading">こんなお悩み、ありませんか？</h2>
+      <div class="divider"></div>
+
+      <ul class="empathy__list">
+        <li class="empathy__item">
+          <span class="empathy__item-text">
+            やり方は分かっているけれど、正しくできているのか不安だ
+          </span>
+        </li>
+        <li class="empathy__item">
+          <span class="empathy__item-text">
+            セールスが苦手で、押し付けるような販売はやりたくない
+          </span>
+        </li>
+        <li class="empathy__item">
+          <span class="empathy__item-text">
+            私なんかの話を聞いてくれる人はいないと思う
+          </span>
+        </li>
+        <li class="empathy__item">
+          <span class="empathy__item-text">
+            お金は稼ぎたいけど、稼げるかどうか自信がない
+          </span>
+        </li>
+        <li class="empathy__item">
+          <span class="empathy__item-text">
+            高額オファーへのブロックがあってコース紹介できない
+          </span>
+        </li>
+        <li class="empathy__item">
+          <span class="empathy__item-text">
+            モニターセッションはできるけど、コース紹介につながらない
+          </span>
+        </li>
+      </ul>
+
+      <p class="empathy__footer">
+        これは、あなただけではありません。<br>
+        今活躍している先輩カウンセラーたちも、<strong>同じ悩みからスタートしていました。</strong>
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       ③ スキルアップ講座とは
+  ════════════════════════════════════ -->
+  <section class="about">
+    <div class="container">
+
+      <p class="section-label">About the Course</p>
+      <h2 class="about__heading">SCカウンセリング<br>スキルアップ講座とは</h2>
+      <div class="divider"></div>
+
+      <p class="about__desc">
+        ビジネスの8割は、メンタルとマインドで決まります。<br>
+        どんなにスキルやノウハウを学んでも、ここが整っていないと行動できず、結果が出ません。<br>
+        この講座は、<strong>メンタル・マインド・ノウハウ・スキル</strong>を、<br>
+        稼げるようになるための「正しい環境」ごと提供します。
+      </p>
+
+      <div class="about__cards">
+        <div class="about__card" style="background-image: url('images/card1.jpg');">
+          <div class="about__card-content">
+            <p class="about__card-title">メンタル＆マインドの強化</p>
+            <p class="about__card-body">お金のブロックを外し、「私は稼いでいい」という潜在意識を書き換えます。行動できない根本から変えます。</p>
+          </div>
+        </div>
+        <div class="about__card" style="background-image: url('images/card2.jpg');">
+          <div class="about__card-content">
+            <p class="about__card-title">トークスクリプト＆ロープレ</p>
+            <p class="about__card-body">セールスしないセールスのコツを、練習相手がいる環境でロープレを重ねながら体に染み込ませます。</p>
+          </div>
+        </div>
+        <div class="about__card" style="background-image: url('images/card3.jpg');">
+          <div class="about__card-content">
+            <p class="about__card-title">コース成約スキルの習得</p>
+            <p class="about__card-body">スパークリングセンターでクライアントの心を掴み、自然にやりたい気持ちになってもらえる六芒星鑑定の秘訣を学びます。</p>
+          </div>
+        </div>
+        <div class="about__card" style="background-image: url('images/card4.jpg');">
+          <div class="about__card-content">
+            <p class="about__card-title">ゼロイチ達成の保証</p>
+            <p class="about__card-body">認定SCカウンセラーとしての第一歩を、講師陣と仲間に囲まれた高波動の環境で確実に踏み出せます。</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="about__note">
+        ※ 講座の詳細・カリキュラム・東京研修の日程などは、説明会動画でお伝えしています。
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       ③.5 結果実績バー
+  ════════════════════════════════════ -->
+  <section class="results">
+    <span class="results__label">受講生の実績（一部）</span>
+    <div class="results__grid">
+      <div class="results__item">
+        <span class="results__num">56万円</span>
+        <span class="results__desc">FBで135名に告知→達成<br><small>小奥美香さん</small></span>
+      </div>
+      <div class="results__item">
+        <span class="results__num">115万円</span>
+        <span class="results__desc">売上達成<br><small>ジャスミン華子さん</small></span>
+      </div>
+      <div class="results__item">
+        <span class="results__num">120万円</span>
+        <span class="results__desc">売上達成<br><small>柊アリスさん</small></span>
+      </div>
+      <div class="results__item">
+        <span class="results__num">100万円</span>
+        <span class="results__desc">売上達成<br><small>渡邉美貴さん</small></span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       ④ 受講生の声
+  ════════════════════════════════════ -->
+  <section class="voices">
+    <div class="container">
+
+      <p class="section-label">Voices</p>
+      <h2 class="voices__heading">スキルアップ講座を受講した方の声</h2>
+      <div class="divider"></div>
+
+      <div class="voices__cards">
+        <div class="voice-card">
+          <span class="voice-card__tag">クロージング克服</span>
+          <p class="voice-card__quote">"</p>
+          <p class="voice-card__text">トークの練習、フィードバックで自信がつきました。クロージングが苦手な自分を克服できました。今後も魂を磨き続けていきたいです。</p>
+          <p class="voice-card__name">— 谷真由美さん</p>
+        </div>
+        <div class="voice-card">
+          <span class="voice-card__tag">初コース成約</span>
+          <p class="voice-card__quote">"</p>
+          <p class="voice-card__text">自分のトークを見直してもらい、ロープレもできる環境にとても感謝しています。さらに変わっていけるよう新たな気持ちで頑張ります！</p>
+          <p class="voice-card__name">— 川原みゆきさん</p>
+        </div>
+        <div class="voice-card">
+          <span class="voice-card__tag">環境の大切さを実感</span>
+          <p class="voice-card__quote">"</p>
+          <p class="voice-card__text">トークもとても細やかにチェックしていただいて、感謝しかありません！素晴らしい環境に感謝です。</p>
+          <p class="voice-card__name">— 小黒佐和子さん</p>
+        </div>
+        <div class="voice-card">
+          <span class="voice-card__tag">お金のブロック解除</span>
+          <p class="voice-card__quote">"</p>
+          <p class="voice-card__text">お金のブロックが外れました。今は2万円でやっていけそう！これからの活動にわくわくしています。ロープレ102回、頑張りました。</p>
+          <p class="voice-card__name">— 野上弘子さん</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       ⑤ 説明会動画（メイン）＋ CTA①
+  ════════════════════════════════════ -->
+  <section class="video-section" id="video">
+    <div class="container video-section__inner">
+
+      <p class="section-label" style="color: var(--gold);">Apply Now</p>
+      <h2 class="video-section__heading">動画をご覧いただけましたか？</h2>
+      <div class="divider"></div>
+
+      <p class="video-section__sub">
+        「私にもできるかも」という気持ちが少しでも湧いたなら、<br>
+        その感覚を大切に、まずはお申し込みください ♪<br>
+        ご不明な点はZOOM個別相談でお気軽にご相談いただけます。
+      </p>
+
+      <!-- 9期日程バッジ（申込みセクション） -->
+      <div class="cohort-box cohort-box--light">
+        <span class="cohort-box__badge">スキルアップ講座 9期 受付中</span>
+        <p class="cohort-box__date">
+          東京研修よりスタート<br>
+          2026年6月28日（日）〜 29日（月）
+        </p>
+      </div>
+
+      <!-- CTA ① -->
+      <a
+        href="https://asp.jcity.co.jp/FORM/?userid=spispi2017&formid=781"
+        class="cta-btn"
+        id="cta-primary">
+        スキルアップ講座に申し込む
+      </a>
+      <p class="cta-note">※ 申込みフォームへ移動します</p>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       ⑤ クロージング ＋ CTA②
+  ════════════════════════════════════ -->
+  <section class="closing">
+    <div class="container">
+
+      <div class="closing__ornament">
+        <span class="closing__ornament-line"></span>
+        <span class="closing__ornament-dot"></span>
+        <span class="closing__ornament-line"></span>
+      </div>
+
+      <p class="closing__message">
+        正しいやり方で、正しい環境に身を置けば、<br>
+        必ず売れるようになります。
+      </p>
+
+      <p class="closing__sub">
+        今活躍している先輩たちも、同じ不安と悩みを抱えながらスタートしました。<br>
+        変わったのは、才能でも運でもなく——<br>
+        <strong>環境と、行動し続けられる仕組み</strong>があったからです。<br><br>
+        動画を見て、少しでも「私にもできるかも」と感じたなら、<br>
+        その気持ちを大切にして、一歩踏み出してみてください ♪
+      </p>
+
+      <!-- CTA ② -->
+      <a
+        href="https://asp.jcity.co.jp/FORM/?userid=spispi2017&formid=781"
+        class="cta-btn"
+        id="cta-secondary">
+        スキルアップ講座に申し込む
+      </a>
+      <p style="margin-top:14px; font-size:12px; color:var(--text-mid);">※ 申込みフォームへ移動します</p>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       フッター
+  ════════════════════════════════════ -->
+  <footer>
+    <p class="footer__logo">一般社団法人 スピリチュアルコーディネーター協会</p>
+    <p class="footer__copy">&copy; 2024 Spiritual Coordinator Association. All rights reserved.</p>
+  </footer>
+
+
+  <!-- ════════════════════════════════════
+       固定CTAバー（スマホ用）
+  ════════════════════════════════════ -->
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <a href="https://asp.jcity.co.jp/FORM/?userid=spispi2017&formid=781" class="cta-btn">
+      スキルアップ講座に申し込む
+    </a>
+  </div>
+
+
+  <!-- ────────────────────────────────────
+       スクリプト（最小限）
+       ・スクロール量に応じて固定CTAを表示
+  ──────────────────────────────────── -->
+  <script>
+    (function() {
+      var stickyCta  = document.getElementById('sticky-cta');
+      var heroCtaBtn = document.getElementById('cta-hero');
+      var primaryCta = document.getElementById('cta-primary');
+      var closingCta = document.getElementById('cta-secondary');
+
+      if (!stickyCta) return;
+
+      var observer = new IntersectionObserver(function(entries) {
+        var anyVisible = entries.some(function(e) { return e.isIntersecting; });
+        stickyCta.style.display = anyVisible ? 'none' : '';
+        stickyCta.setAttribute('aria-hidden', anyVisible ? 'true' : 'false');
+      }, { threshold: 0.1 });
+
+      if (heroCtaBtn) observer.observe(heroCtaBtn);
+      if (primaryCta) observer.observe(primaryCta);
+      if (closingCta) observer.observe(closingCta);
+    })();
+  </script>
+
+</body>
+</html>
